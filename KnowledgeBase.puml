@@ -1,0 +1,23 @@
+@startuml
+
+object ルール
+object 戦略
+object 戦術
+
+object コスミ {
+  斜めに行くこと？
+}
+
+戦術 <|-- コスミ
+
+object 練習方法
+
+object 詰め碁
+object 置き碁
+
+練習方法 <|-- 詰め碁 : 死活の練習
+練習方法 <|-- 置き碁
+
+object 棋士
+
+@enduml
